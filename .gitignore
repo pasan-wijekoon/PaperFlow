@@ -1,0 +1,140 @@
+# ==============================================================================
+# PaperFlow Root Gitignore
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# Operating System Files
+# ------------------------------------------------------------------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon\r
+._*
+.DocumentRevisions-V100
+.Spotlight-V100
+.Trashes
+VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.lnk
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# Linux
+.directory
+.Trash-*
+.fuse_hidden*
+
+# ------------------------------------------------------------------------------
+# IDEs and Editors
+# ------------------------------------------------------------------------------
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# Visual Studio Code
+.vscode/
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/settings.json
+*.code-workspace
+.history/
+
+# Eclipse
+.metadata/
+.classpath
+.project
+.settings/
+.factorypath
+.apt_generated/
+.springBeans/
+.sts4-cache/
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# Sublime Text / Vim
+*.sublime-project
+*.sublime-workspace
+*~
+*.swp
+*.swo
+
+# ------------------------------------------------------------------------------
+# Logs and Diagnostics
+# ------------------------------------------------------------------------------
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ------------------------------------------------------------------------------
+# Environment Variables and Secrets (Never commit credentials!)
+# ------------------------------------------------------------------------------
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+*.env.*
+!.env.example
+.gitsecrets
+*.pem
+*.key
+*.pub
+
+# ------------------------------------------------------------------------------
+# Frontend Application (frontend/)
+# ------------------------------------------------------------------------------
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/pnpm-debug.log*
+frontend/.yarn-metadata.json
+frontend/.eslintcache
+frontend/.stylelintcache
+
+# ------------------------------------------------------------------------------
+# Backend Application (backend/)
+# ------------------------------------------------------------------------------
+backend/target/
+backend/bin/
+backend/build/
+backend/out/
+backend/.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# ------------------------------------------------------------------------------
+# Miscellaneous
+# ------------------------------------------------------------------------------
+.tmp/
+temp/
+tmp/
+dist/
+build/
