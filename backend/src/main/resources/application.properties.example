@@ -1,0 +1,27 @@
+spring.application.name=PaperFlow
+
+# Server Port
+server.port=9000
+
+# ===============================
+# Microsoft SQL Server Configuration
+# ===============================
+
+spring.datasource.url=jdbc:sqlserver://localhost:63325;databaseName=PaperFlow;encrypt=true;trustServerCertificate=true;
+spring.datasource.username=serviceaccount
+spring.datasource.password=password
+
+spring.datasource.driver-class-name=com.microsoft.sqlserver.jdbc.SQLServerDriver
+
+# ===============================
+# Spring Data JPA Configuration
+# ===============================
+
+# Show SQL queries in console
+spring.jpa.show-sql=true
+
+# Format SQL output
+spring.jpa.properties.hibernate.format_sql=true
+
+# Database dialect
+spring.jpa.database-platform=org.hibernate.dialect.SQLServerDialect
