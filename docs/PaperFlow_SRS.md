@@ -87,7 +87,7 @@ PaperFlow connects readers and publication houses across Sri Lanka through a sin
 | FR-AC-001 | High | Enforce role-based access control (RBAC) across all roles: Customer, Publisher, Platform Admin, Finance Admin, and System Admin. |
 | FR-AC-002 | High | Support customer self-registration with SMTP-based email verification. |
 | FR-AC-003 | High | Require Platform Admin review and approval for all publisher applications. |
-| FR-AC-004 | High | Authenticate all HTTP requests using JWT, supplied via the `Authorization: Bearer` header. |
+| FR-AC-004 | High | Authenticate all HTTP requests using a server-side session established at login; requests without a valid, active session must be rejected. |
 | FR-AC-005 | Medium | Enforce multi-device session checks and rate-limiting on authentication attempts. |
 
 ### 4.2 Publisher Portal
